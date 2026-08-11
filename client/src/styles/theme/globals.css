@@ -1,0 +1,81 @@
+/* ========================================
+   Import Design Tokens
+======================================== */
+
+@import "./colors.css";
+@import "./typography.css";
+@import "./spacing.css";
+@import "./radius.css";
+@import "./shadows.css";
+
+/* ========================================
+   CSS Reset
+======================================== */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ========================================
+   Base Styles
+======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family-base);
+    background-color: var(--color-background);
+    color: var(--color-text-primary);
+
+    min-height: 100vh;
+
+    line-height: var(--line-normal);
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* ========================================
+   Links
+======================================== */
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ========================================
+   Buttons
+======================================== */
+
+button {
+    font: inherit;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+}
+
+/* ========================================
+   Images
+======================================== */
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================
+   Inputs
+======================================== */
+
+input,
+textarea,
+select {
+    font: inherit;
+}
