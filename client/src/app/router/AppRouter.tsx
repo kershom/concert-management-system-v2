@@ -1,3 +1,4 @@
+import { DashboardPage } from "../../features/dashboard";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { AppLayout } from "../../components/layout/AppLayout";
 
@@ -22,7 +23,7 @@ function AppRouter() {
                 <Route element={<AppLayout />}>
                     <Route
                         path="/"
-                        element={<PlaceholderPage title="Dashboard" />}
+                        element={<DashboardPage />}
                     />
 
                     <Route
